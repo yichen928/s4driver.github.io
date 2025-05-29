@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="S4-Driver: Scalable Self-Supervised Driving Multimodal Large Language Model with Spatio-Temporal Visual Representation
+"
+    />
+    <meta name="keywords" content="Diffusion Model, Dexterous Manipulation, Robot Learning" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      S4-Driver: Scalable Self-Supervised Driving Multimodal Large Language Model with Spatio-Temporal Visual Representation.
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./public/index.css" rel="stylesheet" />
+    <link href="./public/media.css" rel="stylesheet" />
+    <link href="./public/sidebars.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./public/js/base.js"></script>
+  </head>
+
+  <body>
+    <div class="sidebarsWrapper">
+      <div class="sidebars">
+        <a class="barWrapper" clear href="#abstract-a" id="bar2"
+          ><span>Abstract</span>
+          <div class="bar"></div
+        ></a>
+        <a class="barWrapper" clear href="#methods-a" id="bar3"
+          ><span>Methods</span>
+          <div class="bar"></div
+        ></a>
+        <a class="barWrapper" clear href="#results-a" id="bar4"
+          ><span>Results</span>
+          <div class="bar"></div
+        ></a>
+        <a class="barWrapper" clear href="#visualization-a" id="bar5"
+          ><span>Visualizations</span>
+          <div class="bar"></div
+        ></a>
+        <a class="barWrapper" clear href="#citation" id="bar6"
+          ><span>Citation</span>
+          <div class="bar"></div
+        ></a>
+<!--        <a class="barWrapper" clear href="#attn-a" id="bar5"-->
+<!--          ><span>Attention Analysis</span>-->
+<!--          <div class="bar"></div-->
+<!--        ></a>-->
+      </div>
+    </div>
+    <main class="content">
+      <section class="heading" style="text-align: center!important;">
+        <h1 class="title">
+          S4-Driver: Scalable Self-Supervised Driving Multimodal Large Language Model with Spatio-Temporal Visual Representation
+        </h1>
+        <section class="authors">
+          <ul>
+            <li>
+              <span
+                ><a
+                  href="https://scholar.google.com/citations?user=SdX6DaEAAAAJ&hl=en&oi=ao"
+                  rel="noreferrer"
+                  target="_blank"
+              >Yichen Xie</a
+                ><sup>1 * &#8224;</sup></span
+              >
+            </li>
+            <li>
+              <span
+                ><a
+                  href="https://scholar.google.com/citations?user=QW6Ro8IAAAAJ&hl=zh-TW"
+                  rel="noreferrer"
+                  target="_blank"
+              >Runsheng Xu</a
+                ><sup>2 *</sup></span
+              >
+            </li>
+            <li>
+              <span
+                ><a
+                  href="https://scholar.google.com/citations?user=v6o-fksAAAAJ&hl=zh-CN"
+                  rel="noreferrer"
+                  target="_blank"
+              >Tong He</a
+                ><sup>2</sup></span
+              >
+            </li>
+            <li>
+              <span
+                ><a
+                  href="https://jyhjinghwang.github.io/"
+                  rel="noreferrer"
+                  target="_blank"
+                  >Jyh-Jing Hwang</a
+                ><sup>2</sup></span
+              >
+            </li>
+            <li>
+              <span
+                ><a
+                  href="https://www.cs.cornell.edu/~katieluo/"
+                  rel="noreferrer"
+                  target="_blank"
+                  >Katie Z Luo</a
+                ><sup>3 &#8224;</sup></span
+              >
+            </li>
+            <li>
+              <span
+                ><a
+                  href="https://jingweij.github.io/"
+                  rel="noreferrer"
+                  target="_blank"
+                  >Jingwei Ji</a
+                ><sup>2</sup></span
+              >
+            </li>
+            <li>
+              <span
+                ><a
+                  href="https://www.cs.cornell.edu/~hubert/"
+                  rel="noreferrer"
+                  target="_blank"
+                  >Hubert Lin</a
+                ><sup>2</sup></span
+              >
+            </li>
+            <li>
+              <span
+                ><a
+                  href="http://letianchen.me/"
+                  rel="noreferrer"
+                  target="_blank"
+                  >Letian Chen</a
+                ><sup>4 &#8224;</sup></span
+              >
+            </li>
+            <li>
+              <span
+                ><a
+                  href="https://luyiren.me/"
+                  rel="noreferrer"
+                  target="_blank"
+                  >Yiren Lu</a
+                ><sup>2</sup></span
+              >
+            </li>
+            <li>
+              <span
+                ><a
+                  href="https://scholar.google.com/citations?hl=en&user=tiCAVTQAAAAJ&view_op=list_works&sortby=pubdate"
+                  rel="noreferrer"
+                  target="_blank"
+                  >Zhaoqi Leng</a
+                ><sup>2</sup></span
+              >
+            </li>
+            <li>
+              <span
+                ><a
+                  href="https://scholar.google.com/citations?user=T04c3fwAAAAJ&hl=en"
+                  rel="noreferrer"
+                  target="_blank"
+                  >Dragomir Anguelov</a
+                ><sup>2</sup></span
+              >
+            </li>
+            <li>
+              <span
+                ><a
+                  href="https://scholar.google.com/citations?user=6POeyBoAAAAJ&hl=en"
+                  rel="noreferrer"
+                  target="_blank"
+                  >Mingxing Tan</a
+                ><sup>2</sup></span
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="affiliations">
+          <ul>
+            <li><sup>1</sup>UC Berkeley,</li>
+            <li><sup>2</sup>Waymo LLC,</li>
+            <li><sup>3</sup>Cornell University,</li>
+            <li><sup>4</sup>Georgia Institute of Technology            </li>
+          </ul>
+        </section>
+        <section class="equal">
+          <p>
+            <sup>*</sup>Equal contribution
+          </p>
+        </section>
+        <section class="intern">
+          <p>
+            <sup> &#8224</sup>Work done as interns in Waymo
+          </p>
+        </section>
+        <section class="conference">
+          <h3>
+          CVPR 2025
+          </h3>
+        </section>
+        <section class="logo">
+          <br>
+          <div style="display: flex; width: 100%; height:auto; margin: auto; gap: 10%; justify-content: center; align-items: center">
+            <img
+            style="width: 15%; height: auto"
+            src="./public/images/Waymo_logo.png"
+            />
+          </div>
+        </section>
+        <section class="links">
+          <ul>
+            <a href="https://drive.google.com/file/d/1kkAEJbN_W66jj818bInycuNqJ8kbcW3N/view?usp=sharing" rel="noreferrer" target="_blank">
+              <li>
+                <span class="icon"> <img src="./public/paper.svg" /> </span
+                ><span>Paper</span>
+              </li>
+            </a>
+          </ul>
+        </section>
+        <a class="anchor" id="abstract-a"></a>
+        <h2>Abstract</h2>
+        <p class="abstract" style="font-family: 'Times New Roman', Arial; text-align: justify">
+          The latest advancements in multi-modal large language models (MLLMs) have spurred a strong renewed interest in end-to-end motion planning approaches for autonomous driving. Many end-to-end approaches rely on human annotations to learn intermediate perception and prediction tasks, while purely self-supervised approaches—which directly learn from sensor inputs to generate planning trajectories without human annotations—often underperform the state of the art.
+          We observe a key gap in the input representation space: end-to-end approaches built on MLLMs are often pretrained with reasoning tasks in 2D image space rather than the native 3D space in which autonomous vehicles plan.
+          To this end, we propose S4-Driver, a <u>S</u>calable <u>S</u>elf-<u>S</u>upervised motion planning algorithm with <u>S</u>patio-temporal visual representation,  based on the popular PaLI multimodal large language model. S4-Driver uses a novel sparse volume strategy to seamlessly transform the strong visual representation of MLLMs from perspective view to 3D space without the need to finetune the vision encoder. This representation aggregates multi-view and multi-frame visual inputs and enables better prediction of planning trajectories in 3D space.
+          To validate our method, we run experiments on both nuScenes and Waymo Open Motion Dataset (with in-house camera data).
+          Results show that S4-Driver performs favorably against existing supervised multi-task approaches while requiring no human annotations. It also demonstrates great scalability when pretrained on large volumes of unannotated driving logs.
+        </p>
+      </section>
+
+      <section class="methods" style="text-align: center!important;">
+        <a class="anchor" id="methods-a"></a>
+        <br>
+        <h2>Self-Supervised Learning Framework</h2>
+        <br>
+        <div style="display: flex; margin: auto; width: 95%; height: auto; justify-content: space-between; margin-bottom: -15px; margin-top: -25px">
+          <img style="width: 40%;height: auto;" src="./public/images/mtl.png">
+          <img style="width: 40%;height: auto;" src="./public/images/ssl.png">
+        </div>
+        <div class="col-title" style="display: flex; width: 95%; height: auto; justify-content: space-between; margin: 0; font-family: 'Times New Roman',serif">
+          <p style="margin-left: 5em">Multi-task learning framework.</p>
+          <p style="margin-right: 2em">Self-supervised planning framework.</p>
+        </div>
+        <h2>Enhancing MLLMs for End-to-End Motion Planning</h2>
+        <br>
+        <div style="display: flex; margin: auto; width: 100%; height: auto; justify-content: space-between">
+          <img style="width: 100%;height: auto;" src="./public/images/overview.png">
+        </div>
+        <br>
+        <div style="display: flex; margin: auto; width: 100%; height: auto; justify-content: space-between; font-family: 'Times New Roman',serif">
+          <img style="width: 60%;height: auto;" src="./public/images/roadmap_new.png">
+          <p style="width: 50%;height: auto;margin-top: 100px;margin-left: 1em;text-align: left;"><u>Top:<br>Overview of S4-Driver frameworks.</u><br>We enhance the PaLI model for motion planning by incorporating meta-decision, spatio-temporal visual representation, and multi-decoding aggregation.<br><br><br><u>Left:<br>A roadmap for enhancing MLLM for planning.</u><br> We show the performance on Waymo Open Motion Dataset after including each module, while shadow items are not adopted in the subsequent steps.</p>
+        </div>
+      </section>
+
+      <section class="results" style="text-align: center!important;">
+      <a class="anchor" id="results-a"></a>
+      <h2>Results</h2>
+      <p style="font-family: 'Times New Roman',serif;font-weight: bold">Results on nuScenes Dataset.</p>
+      <div style="display: flex; margin: auto; width: 70%; height: auto; justify-content: space-between; margin-top: -15px">
+        <img style="width: 100%;height: auto;" src="./public/images/nuscenes.png">
+      </div>
+      <br>
+      <p style="font-family: 'Times New Roman',serif;font-weight: bold">Results on Waymo Open Motion Dataset (with internal camera data).</p>
+      <div style="display: flex; margin: auto; width: 70%; height: auto; justify-content: space-between; margin-top: -15px">
+        <img style="width: 100%;height: auto;" src="./public/images/womd.png">
+      </div>
+      <p style="font-family: 'Times New Roman',serif;font-weight: bold">Data Scaling-up with Raw Driving Logs.</p>
+      <div style="display: flex; margin: auto; width: 50%; height: auto; justify-content: space-between; margin-top: -15px">
+        <img style="width: 100%;height: auto;" src="./public/images/scale-up.png">
+      </div>
+
+      <a class="anchor" id="visualization-a"></a>
+      <h2>Visualizations</h2>
+      <div class="col-title" style="display: flex; width:100%; height: auto; justify-content: space-between; margin: 0; font-family: 'Times New Roman',serif;font-weight: bold">
+        <p style="margin-left: 9em">Extreme Weather.</p>
+        <p style="margin-right: 10em">Severe Shadow.</p>
+      </div>
+      <div style="display: flex; margin: auto; width: 100%; height: auto; justify-content: space-between; margin-top: -15px">
+        <img style="width: 47%;height: auto;" src="./public/images/vis_snow.png">
+        <img style="width: 47%;height: auto;" src="./public/images/vis_shadow.png">
+      </div>
+      <p style="font-family: 'Times New Roman',serif;font-weight: bold">Reacting to Traffic Signals.</p>
+      <div style="display: flex; margin: auto; width: 100%; height: auto; justify-content: space-between; margin-top: -15px">
+        <img style="width: 47%;height: auto;" src="./public/images/vis_red.png">
+        <img style="width: 47%;height: auto;" src="./public/images/vis_green.png">
+      </div>
+      <p style="font-family: 'Times New Roman',serif;font-weight: bold">Bad Lighting Condition.</p>
+      <div style="display: flex; margin: auto; width: 100%; height: auto; justify-content: space-between; margin-top: -15px">
+        <img style="width: 47%;height: auto;" src="./public/images/vis_night1.png">
+        <img style="width: 47%;height: auto;" src="./public/images/vis_night2.png">
+      </div>
+      <p style="font-family: 'Times New Roman',serif;font-weight: bold">Turning.</p>
+      <div style="display: flex; margin: auto; width: 100%; height: auto; justify-content: space-between; margin-top: -15px">
+        <img style="width: 47%;height: auto;" src="./public/images/vis_turn1.png">
+        <img style="width: 47%;height: auto;" src="./public/images/vis_turn2.png">
+      </div>
+      <div style="display: flex; margin: auto; width: 100%; height: auto; justify-content: space-between;">
+        <img style="width: 47%;height: auto;" src="./public/images/vis_turn3.png">
+        <img style="width: 47%;height: auto;" src="./public/images/vis_turn4.png">
+      </div>
+      <p style="font-family: 'Times New Roman',serif;font-weight: bold">Keeping the Lane.</p>
+      <div style="display: flex; margin: auto; width: 100%; height: auto; justify-content: space-between; margin-top: -15px">
+        <img style="width: 47%;height: auto;" src="./public/images/vis_lane1.png">
+        <img style="width: 47%;height: auto;" src="./public/images/vis_lane2.png">
+      </div>
+      <div style="display: flex; margin: auto; width: 100%; height: auto; justify-content: space-between;">
+        <img style="width: 47%;height: auto;" src="./public/images/vis_lane3.png">
+        <img style="width: 47%;height: auto;" src="./public/images/vis_lane4.png">
+      </div>
+      </section>
+
+      <a class="anchor" id="citation"></a>
+      <section class="citation" style="text-align: justify;">
+        <h2>Bibtex</h2>
+        <pre>
+<code>@InProceedings{xie2025s4driver,
+  title={S4-Driver: Scalable Self-Supervised Driving Multimodal Large Language Model with Spatio-Temporal Visual Representation},
+  author={Xie, Yichen and Xu, Runsheng and He, Tong and Hwang, Jyh-Jing and Luo, Katie Z and Ji, Jingwei and Lin, Hubert and Chen, Letian and Lu, Yiren and Leng, Zhaoqi and Anguelov, Dragomir and Tan, Mingxing},
+  booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2025},
+}</code></pre>
+      </section>
+      <br />
+    </main>
+  </body>
+</html>
